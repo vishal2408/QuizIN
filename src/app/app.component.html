@@ -1,0 +1,30 @@
+<h1 class="">QUIZIN</h1>
+
+<div style="background-color:#27d0ff">
+<div class="row" style="align-content: center">
+  <div class="col s12 m6">
+    <div class="card white "  >
+      <div class="card-content black-text">
+        <span class="card-title" >
+        {{question}}
+        </span>
+
+          <input type="checkbox" id="test4"  #checkbox1 name="{{options[0]}}"  (change)="change(1)"/>
+          <label for="test4" >{{options[0]}}</label>
+          <input type="checkbox" id="test5"   #checkbox2 name="{{options[1]}}"   (change)="change(2)"/>
+          <label for="test5">{{options[1]}}</label>
+          <input type="checkbox" id="test6"    #checkbox3 name="{{options[2]}}"  (change)="change(3)"/>
+          <label for="test6">{{options[2]}}</label>
+          <input type="checkbox" id="test7"   #checkbox4 name="{{options[3]}}"   (change)="change(4)"/>
+          <label for="test7">{{options[3]}}</label>
+          <button type="submit" (click)="next()">NEXT</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-attempted [Attempted]="attempted"></app-attempted>
+<app-count [Count]="count"></app-count>
+<app-correct [Correct]="Correct" [Response]="response" ></app-correct>
+</div>
+
